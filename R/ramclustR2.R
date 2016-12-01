@@ -659,7 +659,7 @@ ramclustR2<- function(  xcmsObj=NULL,
         for (l in 1:length(mz)) {
           ion<- paste(mz[l], wm[l])
           if(l==1) {specdat<-ion} 
-          if(l>1)  {specdat<-c(specdat, "\t", ion)}
+          if(l>1)  {specdat<-c(specdat, "\n", ion)}
         }
         cat(
           paste("Name: C", j, sep=""), '\n',
